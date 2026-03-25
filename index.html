@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Earth Control 2050</title>
+
+<script src="https://cesium.com/downloads/cesiumjs/releases/1.111/Build/Cesium/Cesium.js"></script>
+<link href="https://cesium.com/downloads/cesiumjs/releases/1.111/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="top-bar">
+  <h1>🌍 EARTH CONTROL 2050</h1>
+  <div id="status">STATUS: ONLINE</div>
+</div>
+
+<div class="main">
+
+<div class="panel left">
+  <h2>LIVE DATA</h2>
+
+  <p id="weather">Weather: Loading...</p>
+  <p id="earthquake">Earthquakes: --</p>
+
+  <button onclick="loadEarthquakes()">🌍 Earthquakes</button>
+  <button onclick="loadFlights()">✈ Live Flights</button>
+  <button onclick="loadStorms()">🌪 Storms (NOAA)</button>
+  <button onclick="loadSatellite()">🛰 Satellite</button>
+</div>
+
+<div id="cesiumContainer" class="center"></div>
+
+<div class="panel right">
+  <h2>AI SYSTEM</h2>
+  <p id="risk">Risk Level: LOW</p>
+  <button onclick="increaseRisk()">Increase Risk</button>
+</div>
+
+</div>
+
+<div class="bottom">
+  <h2>✈ AIRPORT BOARD</h2>
+  <p>Live system connected</p>
+</div>
+
+<!-- 👇 CREDIT MO (SAFE — HINDI MAKAKA-SIRA) -->
+<div class="credit">
+  🌍 <b>EARTH CONTROL 2050</b><br>
+  Advanced AI Monitoring System<br>
+  Developed by <b>Natasia Balgos</b> 🚀<br>
+  Milan, Italy • 2026
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
